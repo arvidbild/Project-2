@@ -106,7 +106,7 @@ for(var i = 0; i < studentItem.length; i++)  {
     studentItem[i].classList.add('hidden'); 
 }
             
- for(var i = 11; i < 20; i++) {
+ for(var i = 10; i < 20; i++) {
     
     studentItem[i].classList.remove('hidden');    
 }
@@ -134,7 +134,7 @@ for(var i = 0; i < studentItem.length; i++)  {
     studentItem[i].classList.add('hidden'); 
 }
             
- for(var i = 21; i < 30; i++) {
+ for(var i = 20; i < 30; i++) {
     
     studentItem[i].classList.remove('hidden');    
 }
@@ -162,7 +162,7 @@ for(var i = 0; i < studentItem.length; i++)  {
     studentItem[i].classList.add('hidden'); 
 }
             
- for(var i = 31; i < 40; i++) {
+ for(var i = 30; i < 40; i++) {
     
     studentItem[i].classList.remove('hidden');    
 }
@@ -170,7 +170,7 @@ for(var i = 0; i < studentItem.length; i++)  {
 $('li.student-item.cf.hidden').hide();
 
     };    
-};
+}
 
 //if button 5 is pressed show 41-50
 function button5() {
@@ -190,7 +190,7 @@ for(var i = 0; i < studentItem.length; i++)  {
     studentItem[i].classList.add('hidden'); 
 }
             
- for(var i = 41; i < 50; i++) {
+ for(var i = 40; i < 50; i++) {
     
     studentItem[i].classList.remove('hidden');    
 }
@@ -218,7 +218,7 @@ for(var i = 0; i < studentItem.length; i++)  {
     studentItem[i].classList.add('hidden'); 
 }
             
- for(var i = 51; i < 60; i++) {
+ for(var i = 50; i < 60; i++) {
     
     studentItem[i].classList.remove('hidden');    
 }
@@ -246,7 +246,7 @@ for(var i = 0; i < studentItem.length; i++)  {
     studentItem[i].classList.add('hidden'); 
 }
             
- for(var i = 61; i < studentItem.length; i++) {
+ for(var i = 60; i < studentItem.length; i++) {
     
     studentItem[i].classList.remove('hidden');    
 }
@@ -271,6 +271,7 @@ addpageButtons(numberofPages);
 button1();
 button2();
 button3();
+button4();
 button5();
 button6();
 button7();
