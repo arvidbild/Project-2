@@ -16,13 +16,9 @@ function showstudents() {
     
 for(var i = 10; i < studentItem.length; i++) {
     
-    studentItem[i].classList.add('hidden');    
+    studentItem[i].style.display = "none"; 
 }
-
-$('li.student-item.cf.hidden').hide();
-
 };
-
 
 // Add Pagination  
 function addpageButtons(numberofPages) {
@@ -67,24 +63,16 @@ function button1() {
         
     //onclick show the first ten students 
     
-    button_1.onclick = function() {             
-
-$('li.student-item.cf.hidden').show();        
+    button_1.onclick = function() {                     
        
 for(var i = 0; i < studentItem.length; i++) {
-    
-    studentItem[i].classList.add('hidden');    
+    studentItem[i].style.display = "none";    
 }
         
 for(var i = 0; i < 10; i++) {
-    
-    studentItem[i].classList.remove('hidden');         
-
+    studentItem[i].style.display = "block";         
 }
-
-$('li.student-item.cf.hidden').hide();        
-        
-        };    
+ };    
 };
 
 //if button 2 is pressed show 11-20
@@ -98,23 +86,17 @@ function button2() {
 //onclick 
     
     button_2.onclick = function() {     
-    
-$('li.student-item.cf.hidden').show();        
+            
+for(var i =0 ; i < studentItem.length; i++)  {  
+    studentItem[i].style.display = "none"; 
+}
         
-for(var i = 0; i < studentItem.length; i++)  {  
-        
-    studentItem[i].classList.add('hidden'); 
+for(var i = 10; i < 20; i++) {
+ studentItem[i].style.display = "block";   
 }
             
- for(var i = 10; i < 20; i++) {
-    
-    studentItem[i].classList.remove('hidden');    
-}
-
-$('li.student-item.cf.hidden').hide();
-
     };    
-};
+}
 
 //if button 3 is pressed show 21-30
 function button3() {
@@ -125,21 +107,15 @@ function button3() {
     
 //onclick 
     
-    button_3.onclick = function() {     
-    
-$('li.student-item.cf.hidden').show();        
+    button_3.onclick = function() {             
         
 for(var i = 0; i < studentItem.length; i++)  {  
-        
-    studentItem[i].classList.add('hidden'); 
+    studentItem[i].style.display = "none";
 }
             
  for(var i = 20; i < 30; i++) {
-    
-    studentItem[i].classList.remove('hidden');    
+    studentItem[i].style.display = "block"    
 }
-
-$('li.student-item.cf.hidden').hide();
 
     };    
 };
@@ -153,21 +129,15 @@ function button4() {
         
     //onclick 
     
-    button_4.onclick = function() {     
-    
-$('li.student-item.cf.hidden').show();        
+    button_4.onclick = function() {         
         
 for(var i = 0; i < studentItem.length; i++)  {  
-        
-    studentItem[i].classList.add('hidden'); 
+    studentItem[i].style.display = "none"; 
 }
             
  for(var i = 30; i < 40; i++) {
-    
-    studentItem[i].classList.remove('hidden');    
+    studentItem[i].style.display = "block";    
 }
-
-$('li.student-item.cf.hidden').hide();
 
     };    
 }
@@ -181,22 +151,15 @@ function button5() {
         
 //onclick 
     
-    button_5.onclick = function() {     
-    
-$('li.student-item.cf.hidden').show();        
+    button_5.onclick = function() {             
         
 for(var i = 0; i < studentItem.length; i++)  {  
-        
-    studentItem[i].classList.add('hidden'); 
+    studentItem[i].style.display = "none"; 
 }
             
  for(var i = 40; i < 50; i++) {
-    
-    studentItem[i].classList.remove('hidden');    
+    studentItem[i].style.display = "block";    
 }
-
-$('li.student-item.cf.hidden').hide();
-
     };    
 };
 
@@ -210,21 +173,14 @@ function button6() {
 //onclick 
     
     button_6.onclick = function() {     
-    
-$('li.student-item.cf.hidden').show();        
-        
+            
 for(var i = 0; i < studentItem.length; i++)  {  
-        
-    studentItem[i].classList.add('hidden'); 
+    studentItem[i].style.display = "none"; 
 }
             
  for(var i = 50; i < 60; i++) {
-    
-    studentItem[i].classList.remove('hidden');    
+    studentItem[i].style.display = "block";    
 }
-
-$('li.student-item.cf.hidden').hide();
-
 };    
 };
 
@@ -237,22 +193,15 @@ function button7() {
         
     //onclick 
     
-    button_7.onclick = function() {     
-    
-$('li.student-item.cf.hidden').show();        
+    button_7.onclick = function() {             
         
-for(var i = 0; i < studentItem.length; i++)  {  
-        
-    studentItem[i].classList.add('hidden'); 
+for(var i = 0; i < studentItem.length; i++)  {          
+    studentItem[i].style.display = "none"; 
 }
             
  for(var i = 60; i < studentItem.length; i++) {
-    
-    studentItem[i].classList.remove('hidden');    
+    studentItem[i].style.display = "block";    
 }
-
-$('li.student-item.cf.hidden').hide();
-
     };    
 };
 
