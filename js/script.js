@@ -10,7 +10,6 @@ var numberofPages = Math.ceil(numberofStudents/10);
 functions
 */
 
-
 //Start with showing 10 studens
 function showstudents() {     
     
@@ -50,19 +49,6 @@ function addpageButtons(numberofPages) {
     }    
 };
 
-/*
-Program starts here
-*/
-
-//show only ten students on page load
-showstudents();
-
-//initialize the pagination
-addpageButtons(numberofPages);
-
-
-document.querySelector(".pagination").addEventListener("click", button);
-                                                        
 function button() {
   var buttonpressed =  event.target.innerHTML;   
     
@@ -91,3 +77,18 @@ else {
     
             }
         }
+
+/*
+Program starts here
+*/
+
+//show only ten students on page load
+showstudents();
+
+//initialize the pagination
+addpageButtons(numberofPages);
+
+//eventlistener on which button is clicked -- execute function "button"
+document.querySelector(".pagination").addEventListener("click", button);
+                                                        
+
